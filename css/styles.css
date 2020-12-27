@@ -2306,6 +2306,9 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  /* Add the blur effect */
+  filter: blur(80px);
+  -webkit-filter: blur(8px);
 }
 .was-validated .form-control:valid:focus,
 .form-control.is-valid:focus {
