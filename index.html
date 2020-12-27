@@ -10,6 +10,12 @@
       <meta name="author" content="" />
       <title>Group-20</title>
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+      <!--register-->
+      <link
+         rel="stylesheet"
+         href="/register/fonts/material-icon/css/material-design-iconic-font.min.css"
+         />
+      
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="css/styles.css" rel="stylesheet" />
    </head>
@@ -80,39 +86,37 @@
                      </div>
                      <!--radio button-->
                      <div class="radio-button" >
-                           <p>Severity Level: </p>
+                        <p>Severity Level: </p>
                         <!-- Default radio -->
-
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="radio"
-                                 name="flexRadioDefault"
-                                 id="flexRadioDefault1"
-                                 />
-                              <label class="form-check-label" for="flexRadioDefault1"> High </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="radio"
-                                 name="flexRadioDefault"
-                                 id="flexRadioDefault1"
-                                 />
-                              <label class="form-check-label" for="flexRadioDefault1"> Medium </label>
-                           </div>
-                           <!-- Default checked radio -->
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="radio"
-                                 name="flexRadioDefault"
-                                 id="flexRadioDefault2"
-                                 checked
-                                 />
-                              <label class="form-check-label" for="flexRadioDefault2"> Low </label>
-                           </div>
- 
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                              />
+                           <label class="form-check-label" for="flexRadioDefault1"> High </label>
+                        </div>
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                              />
+                           <label class="form-check-label" for="flexRadioDefault1"> Medium </label>
+                        </div>
+                        <!-- Default checked radio -->
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                              checked
+                              />
+                           <label class="form-check-label" for="flexRadioDefault2"> Low </label>
+                        </div>
                      </div>
                   </div>
                   <div class="col-md-6">
@@ -143,24 +147,72 @@
       </section>
       <!-- LOGIN-->
       <section class="page-section bg-light" id="login" >
-         <div class="container" style="background-color: black;">
+         <div class="container">
             <div class="simple-login-container">
-               <h2>Login Form</h2>
+               <h2 style="padding: 0 0 20px 0;">LOGIN</h2>
                <div class="row">
-                  <div class="col-md-12 form-group">
+                  <div class="col-md-12 form-group" >
                      <input type="text" class="form-control" placeholder="Username">
                   </div>
                </div>
-               <div class="row">
+               <div class="row" >
                   <div class="col-md-12 form-group">
                      <input type="password" placeholder="Enter your Password" class="form-control">
                   </div>
                </div>
                <div class="row">
                   <div class="col-md-12 form-group">
-                     <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password" >
+                     <input type="submit" class="btn btn-success btn-xl text-uppercase" >
                   </div>
                </div>
+            </div>
+         </div>
+      </section>
+      <!-- Register-->
+         <section class="page-section bg-light" id="register" >
+         <div class="container">
+            <div class="simple-login-container">
+               <h2 style="padding: 0 0 20px 0;">CREATE ACCOUNT</h2>
+
+               <h2 class="form-title">What type of user are you ?</h2>
+               <div class="form-radio">
+                  <input type="radio" name="member_level" value="newbie" id="newbie" checked="checked" />
+                  <label for="newbie">DMT</label>
+
+                  <input type="radio" name="member_level" value="average" id="average" />
+                  <label for="average">TEAM</label>
+
+                  <input type="radio" name="member_level" value="master" id="master" />
+                  <label for="master">AMBULANCE</label>
+
+                  <input type="radio" name="member_level" value="master" id="volunteer" />
+                  <label for="volunteer">VOLUNTEER</label>
+               </div>
+               
+               <div class="row">
+                  <div class="col-md-12 form-group" >
+                     <input type="text" class="form-control" placeholder="Full name">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+               </div>
+               <div class="form-group">
+                  <input type="number" class="form-control" id="phoneNumber" aria-describedby="number" placeholder="Enter phone">
+               </div>
+               <div class="row" >
+                  <div class="col-md-12 form-group">
+                     <input type="password" placeholder="Enter your Password" class="form-control">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 form-group">
+                     <input type="submit" class="btn btn-success btn-xl text-uppercase" >
+                  </div>
+               </div>
+               <p class="loginhere">
+                  Already have an account ?<a href="#login" class="loginhere"> Log in</a>
+                </p>
             </div>
          </div>
       </section>
@@ -168,22 +220,7 @@
       <footer class="footer py-4">
          <div class="container">
             <div class="row align-items-center">
-               <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
-               <div class="col-lg-4 my-3 my-lg-0">
-                  <a class="btn btn-dark btn-social mx-2" href="#!"
-                     ><i class="fab fa-twitter"></i
-                     ></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!"
-                     ><i class="fab fa-facebook-f"></i
-                     ></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!"
-                     ><i class="fab fa-linkedin-in"></i
-                     ></a>
-               </div>
-               <div class="col-lg-4 text-lg-right">
-                  <a class="mr-3" href="#!">Privacy Policy</a>
-                  <a href="#!">Terms of Use</a>
-               </div>
+               <div class="col-lg-4 text-lg-left" style="color: chartreuse;">Copyright © Mobile Computing group-20</div>
             </div>
          </div>
       </footer>

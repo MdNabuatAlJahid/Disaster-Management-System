@@ -10,6 +10,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -78,7 +79,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #c5c9ce;
+  color: black;
   text-align: left;
   background-color: #adb5bd;
 }
@@ -506,7 +507,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: black;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -8130,6 +8131,7 @@ button.bg-dark:focus {
 .pt-4,
 .py-4 {
   padding-top: 1.5rem !important;
+  background-color: black;
 }
 
 .pr-4,
@@ -10945,4 +10947,91 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 .radio-button {
   margin: 20px 0;
+}
+
+#login #register {
+  height: 120vh; /* For 100% screen height */
+  text-align: center;
+}
+.simple-login-container {
+  padding: 60px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+/*register*/
+
+.form-radio {
+  margin: 0 -10px;
+  margin-bottom: 40px;
+}
+.form-radio input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.form-radio input + label {
+  margin: 0 8px;
+  padding: 11px 31px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 2px #ebebeb;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-align: center;
+  transition: border-color 0.15s ease-out, color 0.25s ease-out,
+    background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.form-radio input:checked + label {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+  z-index: 1;
+}
+.form-radio input:focus + label {
+  outline: none;
+}
+.form-radio input:hover {
+  background-color: #1da0f2;
+  color: #fff;
+  border-color: #1da0f2;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 30px);
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .sign-up-content {
+    padding: 40px 20px 32px 20px;
+  }
+
+  .form-radio input + label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-textbox label {
+    left: 15px;
+  }
+
+  input {
+    padding: 16px 30px 16px 100px;
+  }
 }
