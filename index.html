@@ -67,7 +67,7 @@
     <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h2 class="section-heading text-uppercase">Victim Register</h2>
           <h3 class="section-subheading text-muted">
             We are here to help you!
           </h3>
@@ -89,11 +89,11 @@
               <div class="form-group mb-md-0">
                 <input
                   class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="Your Phone *"
+                  id="location"
+                  type="location"
+                  placeholder="Your Location *"
                   required="required"
-                  data-validation-required-message="Please enter your phone number."
+                  data-validation-required-message="Please enter your location."
                 />
                 <p class="help-block text-danger"></p>
               </div>
@@ -158,20 +158,60 @@
               id="sendMessageButton"
               type="submit"
             >
-              Send Message
+              Submit
             </button>
+            <br />
+            <br />
+            <p class="loginhere" style="color: whitesmoke">
+              Already have an account ?<a
+                href="#Victim-login"
+                class="loginhere"
+              >
+                Log in</a
+              >
+            </p>
           </div>
         </form>
+      </div>
+    </section>
+    <!-- VICTIM LOGIN-->
+    <section class="page-section bg-light" id="Victim-login">
+      <div class="container">
+        <div class="simple-login-container">
+          <h2 style="padding: 0 0 20px 0">Victim Login</h2>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Give your ID number"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input
+                type="submit"
+                class="btn btn-success btn-xl text-uppercase"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- LOGIN-->
     <section class="page-section bg-light" id="login">
       <div class="container">
         <div class="simple-login-container">
-          <h2 style="padding: 0 0 20px 0">LOGIN</h2>
+          <h2 style="padding: 0 0 20px 0">Login</h2>
           <div class="row">
             <div class="col-md-12 form-group">
-              <input type="text" class="form-control" placeholder="Username" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Give your ID number"
+              />
             </div>
           </div>
           <div class="row">
@@ -243,27 +283,19 @@
           </div>
           <div class="form-group">
             <input
-              type="email"
+              type="password"
               class="form-control"
-              id="exampleInputEmail1"
+              id="password"
               aria-describedby="emailHelp"
-              placeholder="Enter email"
+              placeholder="Enter your password"
             />
           </div>
-          <div class="form-group">
-            <input
-              type="number"
-              class="form-control"
-              id="phoneNumber"
-              aria-describedby="number"
-              placeholder="Enter phone"
-            />
-          </div>
+
           <div class="row">
             <div class="col-md-12 form-group">
               <input
-                type="password"
-                placeholder="Enter your Password"
+                type="location"
+                placeholder="Enter your Location"
                 class="form-control"
               />
             </div>
